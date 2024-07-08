@@ -1,0 +1,56 @@
+.App {
+  text-align: center;
+}
+
+
+* {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* color  */
+  --body-color: #e4e9f7;
+  --sidebar-color: #fff;
+  --primary-color-light: #f6f5ff;
+  --primary-color: #695cfe;
+  --toggle-color: #ddd;
+  --text-color: #707070;
+  --card-color: #ddd;
+
+  /* transition */
+  --tran-02: all 0.2s ease;
+  --tran-03: all 0.3s ease;
+  --tran-04: all 0.4s ease;
+  --tran-05: all 0.5s ease;
+}
+
+body {
+  height: 100vh;
+  background: var(--body-color);
+  transition: var(--tran-05);
+}
+
+body.dark {
+  --body-color: #18192a;
+  --sidebar-color: #242526;
+  --primary-color-light: #3a383c;
+  --primary-color: #3a3b3c;
+  --toggle-color: #fff;
+  --text-color: #ccc;
+  --card-color: #808080;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+p {
+  color: var(--text-color);
+}
+
+h3 {
+  color: var(--text-color);
+}
