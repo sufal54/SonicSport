@@ -1,0 +1,113 @@
+.cards-conatiner {
+    margin-top: 20px;
+    width: 100%;
+    height: 660px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.cards-conatiner .manage-card {
+    width: 100%;
+    height: 70px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    border-width: 1px;
+    border-style: solid;
+    border-color: var(--text-color);
+    margin-top: 10px;
+}
+
+.manage-card .info {
+    width: calc(100% - 50px);
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.manage-card .info img {
+    width: 60px;
+    height: 60px;
+    border-radius: 10px;
+}
+
+.manage-card .info #user-Role {
+    position: absolute;
+    color: black;
+    font-size: 10px;
+    margin-left: 70px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    background: greenyellow;
+}
+
+.manage-card .info #admin {
+    position: absolute;
+    color: white;
+    font-size: 10px;
+    margin-left: 70px;
+    margin-bottom: 40px;
+    border-radius: 5px;
+    background: red;
+}
+
+.manage-card .info p {
+    margin-left: 10px;
+    color: var(--text-color);
+}
+
+.manage-card .cancel-icon {
+    width: 50px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--tran-04);
+}
+
+.manage-card .cancel-icon:hover {
+    background: var(--primary-color);
+}
+
+.manage-card .cancel-icon #cancel {
+    font-size: 30px;
+    color: var(--text-color);
+}
+
+.manage-card #isUserUpdate {
+    width: 100%;
+    height: 300px;
+    position: absolute;
+    bottom: calc(100% / 3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    row-gap: 15px;
+    flex-direction: column;
+    border: 2px solid gray;
+    box-shadow: 5px 5px 5px black;
+    background: var(--primary-color-light);
+}
+
+.manage-card #isUserUpdate #Update-alert {
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 20px;
+    margin-bottom: 50px;
+}
+
+.manage-card #isUserUpdate p {
+    color: var(--text-color);
+    cursor: pointer;
+}
+
+.manage-card #isUserUpdate #yes-no {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 40px;
+}

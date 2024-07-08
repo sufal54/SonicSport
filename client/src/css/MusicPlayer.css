@@ -1,0 +1,330 @@
+.player-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    transition: var(--tran-05);
+    z-index: 11;
+}
+
+.player-container #player-card {
+    width: 375px;
+    height: 700px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 1px solid #a3a3a3;
+    box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.3);
+    background: var(--sidebar-color);
+    transition: var(--tran-05);
+}
+
+.player-container #player-card #arrow-div {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--tran-05);
+}
+
+.player-container #player-card #arrow-div #down-arrow {
+    position: relative;
+    right: 130px;
+    color: var(--text-color);
+    font-size: 30px;
+    transition: var(--tran-05);
+}
+
+.player-container #player-card #arrow-div #cross {
+    position: relative;
+    left: 130px;
+    color: var(--text-color);
+    font-size: 30px;
+    transition: var(--tran-05);
+}
+
+
+.player-container #player-card #songcove {
+    width: 300px;
+    height: 400px;
+    margin-top: 20px;
+    border-radius: 20px;
+    transition: var(--tran-05);
+}
+
+.player-container #player-card #scroll-text {
+    width: calc(100% - 50px);
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.player-container #player-card #scroll-text #song-name {
+    width: 250px;
+    margin-top: 15px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+    color: var(--text-color);
+    transition: var(--tran-05);
+    animation: scroll 25s linear infinite alternate;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(100%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.player-container #player-card #sound-bar {
+    height: 20px;
+    width: calc(100% - 70px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    transition: var(--tran-05);
+}
+
+.player-container #player-card #sound-bar .sound-icon {
+    font-size: 25px;
+    margin-left: 5px;
+    color: var(--text-color);
+    transition: var(--tran-03);
+}
+
+.player-container #player-card #sound-bar #input {
+    width: 90px;
+    height: 3px;
+    margin-left: 5px;
+    transition: var(--tran-05);
+}
+
+.player-container #player-card #play-bar {
+    width: 300px;
+    height: 3px;
+    margin-top: 10px;
+    border-radius: 20px;
+    display: flex;
+    transition: var(--tran-02);
+    background: var(--text-color);
+}
+
+.player-container #player-card #play-bar #seek_bar {
+    width: 0%;
+    height: 100%;
+    transition: var(--tran-02);
+    background: var(--primary-color);
+}
+
+.player-container #player-card #play-bar #round-bar {
+    height: 15px;
+    width: 15px;
+    position: relative;
+    bottom: 7px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    transition: var(--tran-02);
+    background: var(--primary-color);
+}
+
+.player-container #player-card #time {
+    width: 300px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    color: var(--text-color);
+    transition: var(--tran-02);
+}
+
+/* player */
+.player-container #player-card #player-icons {
+    width: 300px;
+    height: 30px;
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--tran-05);
+}
+
+.player-container #player-card #player-icons .play-icon {
+    font-size: 30px;
+    color: var(--text-color);
+    margin: 20px;
+    transition: var(--tran-03);
+}
+
+
+.player-container #player-card #player-icons .play-icon:active {
+    color: red;
+}
+
+
+
+/* miniplayer */
+
+.player-container2 {
+    width: calc(100% - 88px);
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    z-index: 11;
+    transition: var(--tran-05);
+}
+
+.player-container2 #player-card2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid #a3a3a3;
+    box-shadow: 5px 6px 10px rgba(0, 0, 0, 0.3);
+    background: var(--sidebar-color);
+    transition: var(--tran-05);
+}
+
+.player-container2 #player-card2 #arrow-div2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: var(--tran-05);
+}
+
+.player-container2 #player-card2 #arrow-div2 #down-arrow2 {
+    transform: rotate(180deg);
+    color: var(--toggle-color);
+    margin-left: 10px;
+    font-size: 30px;
+    transition: var(--tran-05);
+    position: relative;
+    bottom: 20px;
+    border-radius: 50%;
+    background: var(--primary-color);
+}
+
+.player-container2 #player-card2 #arrow-div2 #cross2 {
+    color: var(--text-color);
+    font-size: 25px;
+    transition: var(--tran-05);
+}
+
+
+.player-container2 #player-card2 #songcove2 {
+    width: 50px;
+    height: 70px;
+    position: absolute;
+    left: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+    transition: var(--tran-05);
+}
+
+.player-container2 #player-card2 #scroll-text2 {
+    width: calc(100% - 90px);
+    margin-left: 30px;
+    position: absolute;
+    top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.player-container2 #player-card2 #scroll-text2 #song-name2 {
+    font-size: 16px;
+    color: var(--text-color);
+    transition: var(--tran-05);
+    animation: scroll2 20s linear infinite alternate;
+}
+
+@keyframes scroll2 {
+    0% {
+        transform: translateX(40%);
+    }
+
+    100% {
+        transform: translateX(-40%);
+    }
+}
+
+.player-container2 #player-card2 #play-bar2 {
+    width: calc(100% - 80px);
+    height: 3px;
+    position: absolute;
+    top: 50px;
+    left: 70px;
+    border-radius: 20px;
+    display: flex;
+    transition: var(--tran-02);
+    background: var(--text-color);
+}
+
+.player-container2 #player-card2 #play-bar2 #seek_bar2 {
+    width: 0%;
+    height: 100%;
+    transition: var(--tran-02);
+    background: var(--primary-color);
+}
+
+.player-container2 #player-card2 #play-bar2 #round-bar2 {
+    height: 15px;
+    width: 15px;
+    position: relative;
+    bottom: 7px;
+    border-radius: 50%;
+    border: 1px solid gray;
+    transition: var(--tran-02);
+    background: var(--primary-color);
+}
+
+/* player */
+.player-container2 #player-card2 #player-icons2 {
+    width: 300px;
+    height: 30px;
+    margin-top: 20px;
+    position: absolute;
+    bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: var(--tran-05);
+
+}
+
+.player-container2 #player-card2 #player-icons2 .play-icon2 {
+    font-size: 25px;
+    color: var(--text-color);
+    margin: 20px;
+    transition: var(--tran-03);
+}
+
+.player-container2 #player-card2 #player-icons2 .play-icon2:active {
+    color: red;
+}

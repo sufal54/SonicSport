@@ -1,0 +1,147 @@
+#song-update {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: var(--sidebar-color);
+}
+
+#cross-icon{
+    font-size: 30px;
+    color: var(--text-color);
+}
+
+#song-update input {
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    margin-top: 20px;
+    background: transparent;
+    border: 2px solid gray;
+    border-radius: 10px;
+    transition: var(--tran-04);
+}
+
+#song-update input:focus {
+    outline: none;
+    box-shadow: 5px 5px 10px black;
+}
+
+#song-update #filter {
+    width: 100%;
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+}
+
+/* document upload */
+
+#documante-upload {
+    width: 100%;
+    height: 500px;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#filter-loader {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#filter-loader #progressing {
+    font-size: 20px;
+}
+
+#pro-load {
+    width: 50px;
+}
+
+#load-bar {
+    font-size: 50px;
+    color: #ea03ff;
+    animation: rotate 4s linear infinite;
+    background-image: linear-gradient(43deg, #415bd0 10%, #8903ff 30%, #ea03ff 60%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#song-file {
+    width: calc(100% - 20px);
+    height: calc(100% / 2 - 20px);
+    margin-top: 20px;
+    background: blue;
+    overflow: hidden;
+}
+
+/* fileupload */
+
+#file-upload {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+#file-upload #data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+#file-upload input {
+    display: none;
+}
+
+#upload-icon {
+    color: var(--text-color);
+    font-size: 25px;
+}
+
+/* submit button  */
+
+#submit-button {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+#submit-button button {
+    width: 80px;
+    height: 40px;
+    font-size: 17px;
+    font: bold;
+    color: var(--text-color);
+    border-radius: 15px;
+    border: none;
+    transition: var(--tran-04);
+}
+
+#submit-button button:active {
+    transform: scale(0.7);
+    font-size: 11px;
+    background: red;
+}

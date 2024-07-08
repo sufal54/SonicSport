@@ -1,0 +1,60 @@
+.login-container {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.login-container #login {
+    width: 100%;
+    height: 100%;
+    background: var(--body-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-container #login #log {
+    width: 350px;
+    height: 600px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    box-shadow: 2px 6px 5px rgba(0, 0, 0, 0.5);
+    background: var(--sidebar-color);
+}
+
+.login-container #login #log h3 {
+    margin-top: 90px;
+    font-size: 30px;
+    color: var(--text-color);
+}
+
+.login-container #login #log #google {
+    width: 250px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 100px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid #d3d0db;
+    box-shadow: 2px 6px 5px rgba(0, 0, 0, 0.2);
+    transition: var(--tran-02);
+}
+
+.login-container #login #log #google:hover {
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+
+#gooogle-icon {
+    font-size: 40px;
+    margin-left: 3px;
+}
+
+.login-container #login #log #google p{
+    color: var(--text-color);
+    margin-left: 20px;
+}

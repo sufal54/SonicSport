@@ -1,0 +1,31 @@
+#filter-button {
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+}
+
+#filter-button p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    background: var(--primary-color-light);
+    gap: 10px;
+}
+
+#filter-button #filter-icon {
+    color: var(--text-color);
+}
+
+#filter-button #menu {
+    width: 100px;
+    max-height: 150px;
+    overflow-y: scroll;
+    box-shadow: 2px 3px 6px gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: transparent;
+    row-gap: 8px;
+}
+
