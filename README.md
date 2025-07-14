@@ -14,7 +14,9 @@ SonicSport is a modern and secure online music streaming platform where users ca
   - 🗂️ Category (e.g., language or genre)
 - 📚 **Organized Catalog** — Browse music by language, artist, or search
 
-- https://youtu.be/vvDjeB59SMk?si=5Vo0DmIwCldZdds7
+  ## 📺 Watch on YouTube
+
+[![Watch the video](https://img.youtube.com/vi/vvDjeB59SMk/0.jpg)](https://youtu.be/vvDjeB59SMk?si=5Vo0DmIwCldZdds7)
 
 ---
 
